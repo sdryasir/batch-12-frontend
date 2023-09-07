@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+.active{
+  background-color: red;
+}
+
+.modal-overlay{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+}
+.inner-modal{
+  width: 60%;
+  padding: 24px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closebtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
