@@ -62,7 +62,7 @@ function AddProduct() {
                     </div>
                 </div> */}
                 <div className="col-12">
-                    <label htmlFor="image" className="form-label">Upload Image</label>
+                    <label htmlFor="image" className="form-label">Upload Some Image</label>
                     <input type="file" onChange={(event) => {
                             let reader = new FileReader();
                             reader.onloadend = () => {
