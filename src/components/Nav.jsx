@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Modal from './Modal'
+import { useSelector } from 'react-redux'
 
 function Nav({products}) {
     let [isModalOpen, setIsModalOpen]= useState(false)
 
-
+    const {cart} = useSelector(state=>state.rootReducer)
     let openModal = ()=>{
 
         if(isModalOpen){
@@ -42,7 +43,7 @@ function Nav({products}) {
                                 <button className='btn btn-info me-2' onClick={openModal}>Login</button>
                             </li>
                             <li className="nav-item">
-                                <strong>{products.length}</strong>
+                                <button className="btn btn-primary"><i class="bi bi-cart-fill"></i>{cart.cart && cart.cart.length}</button>
                             </li>
                         </ul>
                     </div>
